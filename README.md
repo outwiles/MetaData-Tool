@@ -67,7 +67,8 @@ The application also exposes a lightweight Flask health endpoint for uptime moni
 ├── bot.py
 ├── requirements.txt
 ├── render.yaml
-├── metadata.png
+├── assets
+├    ├── metadata.png
 ├── README.md
 └── LICENSE
 ```
@@ -91,5 +92,5 @@ This project is released under the MIT License. See [`LICENSE`](LICENSE) for det
 ---
 
 <p align="center">
-  Made with ❤️ for Telegram
+  Made by Aashu for Telegram
 </p>
