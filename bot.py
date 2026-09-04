@@ -122,8 +122,7 @@ async def start(update,ctx):
 """
     kb=InlineKeyboardMarkup([
         [
-            InlineKeyboardButton("👨‍💻 Developer",url="https://t.me/outwiles"),
-            InlineKeyboardButton("📧 Mail",url="mailto:outwiles@proton.me")
+            InlineKeyboardButton("👨‍💻 Developer",url="https://t.me/outwiles")
         ]
     ])
     await update.message.reply_text(text,parse_mode="MarkdownV2",reply_markup=kb)
