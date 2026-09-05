@@ -14,13 +14,13 @@
 - 📱 Camera and device information
 - 📅 Date and time information
 - 📐 Image dimensions and resolution
-- 🔭 Lens, ISO, aperture and shutter speed
+- 🔭 Lens, ISO, aperture and shutter speed (when present in EXIF)
 - 📍 GPS coordinates when available
 - 🗺️ Google Maps location links for GPS metadata
 - 📄 Supports Telegram photos and image documents
 - ⚡ Asynchronous processing for fast responses
 - 🔐 Private-message only operation
-- 📢 Force-join protection
+- 📢 Force-join protection (channel + backup)
 - ☁️ Ready for deployment on Render
 
 ## 🚀 Deployment
@@ -28,8 +28,8 @@
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
-cd <YOUR_REPOSITORY_NAME>
+git clone https://github.com/outwiles/MetaData-Tool.git
+cd MetaData-Tool
 ```
 
 ### 2. Install dependencies
@@ -48,6 +48,13 @@ Set the `BOT_TOKEN` environment variable with your Telegram bot token.
 python bot.py
 ```
 
+## 🤖 Usage
+
+- `/start` — greets the user and checks channel membership
+- Send a photo or an image file (document) in a private chat with the bot to receive its extracted metadata
+
+For maximum metadata preservation, send the image as a **document/file** rather than a compressed photo — Telegram strips most EXIF data from regular photo uploads.
+
 ## ☁️ Render
 
 This project includes `render.yaml` for Render deployment.
@@ -58,19 +65,20 @@ Add the following environment variable:
 BOT_TOKEN=your_telegram_bot_token
 ```
 
-The application also exposes a lightweight Flask health endpoint for uptime monitoring.
+The application also exposes a lightweight Flask health endpoint at `/health` (and `/`) for uptime monitoring.
 
 ## 📦 Project Structure
 
 ```text
 .
+├── assets/
+│   └── metadata.png
 ├── bot.py
 ├── requirements.txt
 ├── render.yaml
-├── assets
-├    ├── metadata.png
-├── README.md
-└── LICENSE
+├── .python-version
+├── LICENCE
+└── README.md
 ```
 
 ## 🛠️ Requirements
@@ -83,14 +91,14 @@ The application also exposes a lightweight Flask health endpoint for uptime moni
 
 ## 🔒 Privacy
 
-Metadata is processed only to generate the requested result. Users should avoid uploading images containing sensitive information they do not want processed.
+Metadata is processed only to generate the requested result and is not stored — files are deleted immediately after processing. Users should avoid uploading images containing sensitive information they do not want processed.
 
 ## 📜 License
 
-This project is released under the MIT License. See [`LICENSE`](LICENSE) for details.
+This project is released under the MIT License. See [`LICENCE`](LICENCE) for details.
 
 ---
 
 <p align="center">
-  Made by Aashu for Telegram
+  Made by <a href="https://t.me/outwiles">outwiles</a> for Telegram
 </p>
