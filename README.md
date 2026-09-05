@@ -8,6 +8,8 @@
   <b>🔍 Extract hidden metadata and EXIF information from images directly in Telegram.</b>
 </p>
 
+ACTIVE BOT LINK: https://t.me/MetadataExtractBot
+
 ## ✨ Features
 
 - 📷 Extracts EXIF and image metadata
@@ -99,6 +101,17 @@ This project is released under the MIT License. See [`LICENCE`](LICENCE) for det
 
 ---
 
+Credits
+
 <p align="center">
-  Made by <a href="https://t.me/outwiles">outwiles</a> for Telegram
+  <b>Developed by Aashu</b><br/><br/>
+  <a href="https://t.me/outwiles">
+    <img src="https://img.shields.io/badge/Telegram-@outwiles-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
+  </a>
+  <a href="https://github.com/outwiles">
+    <img src="https://img.shields.io/badge/GitHub-@outwiles-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+  <a href="mailto:outwiles@proton.me">
+    <img src="https://img.shields.io/badge/Mail-outwiles%40proton.me-D14836?style=for-the-badge&logo=protonmail&logoColor=white" alt="Mail" />
+  </a>
 </p>
